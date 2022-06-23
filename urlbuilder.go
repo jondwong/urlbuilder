@@ -50,6 +50,6 @@ func (u *UrlBuilder) GetUrl() *url.URL {
 	return &u.url
 }
 
-func (u *UrlBuilder) String() {
-	fmt.Println(u.url.String())
+func (u *UrlBuilder) Build() string {
+	return u.url.String()
 }
